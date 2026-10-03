@@ -1,6 +1,18 @@
-.header{
-  background-color: skyblue;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+* {
+box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Google Sans, Arial, sans-serif;
+  color: black;
+}
+
+h2 {
+  font-family: "Libre Caslon Condensed", serif;
+  text-transform: uppercase;
 }

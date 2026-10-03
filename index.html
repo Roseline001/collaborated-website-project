@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header> <!--Classes will be added later when we'll be styling the header section-->
-    <nav> 
-      <a href="#hero"> <!--when you click the name it will take you to the top-hero section-->
+  <header class="header"> 
+    <nav class="nav-bar"> 
+      <a href="#hero" class="header-name"> 
         Mitchelle Wakesho
       </a>
-      <ul> <!-- Navigation links declared with their IDs that we'll use in the corresponding sections -->
+      <ul class="nav-links" id="nav-links">
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -21,11 +24,11 @@
   </header>
   <main>
     <section id="hero" class="hero-section">
-      <h>Hi there.</h>
+      <h2>Hi there.</h2>
       <p class="subtitle"> My name is Mitchelle Wakesho.</p>
       <div class="about-me">
           <img src="JuniorSD.png" alt="" class="avatar-img">
-          <h>About Me</h>
+          <h2>About Me</h2>
           <p>I am a budding full-stack software developer at Moringa School, <br>seeking to refine my skills in front-end and back-end development.</br></p>
           <p>My goal is to gain the necessary skills and knowledge to build automation systems <br>for enterprises to streamline management and operations.</br></p>
       </div>
@@ -33,7 +36,7 @@
     <!--- Testimonials Section --->
     <section id="testimonials">
       <div>
-        <h1>Testimonials</h1>
+        <h2>Testimonials</h2>
       </div>
       <div id="testimonials-container">
            <!-- JavaScript Testimonials Here-->
@@ -43,7 +46,7 @@
     <!--- Projects Section --->
     <section id="projects">
       <div>
-        <h1>Projects</h1>
+        <h2>Projects</h2>
       </div>
       <div id="projects-container">
            <!-- JavaScript Projects Here-->
@@ -51,7 +54,7 @@
     </section>
     <!--- Contact Section --->
     <section id="contact" class="contact-content">
-            <h1>Contact Me</h1>
+            <h2>Contact Me</h2>
             <p>Email: karumenick@gmail.com</p>
             <a href="https://github.com/karumenick-dev" target="_blank" rel="noopener noreferrer">Here's my GitHub profile</a>
     </section>
