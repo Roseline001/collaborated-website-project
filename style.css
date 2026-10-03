@@ -108,6 +108,7 @@ h2 {
   height: 400px;
   z-index: 2;
   border-radius: 15px;
+  flex: 0 1 400px;
 }
 
 .hero-image img {
@@ -117,6 +118,7 @@ h2 {
   border-radius: 15px;
   position: relative;
   background: transparent;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
 #contact {
@@ -161,4 +163,29 @@ h2 {
 
 .contact-links a:hover {
   color: rgb(2, 152, 160);
+}
+
+.footer {
+  background: #002c3b;
+  border-top: 1px solid #3c3c3c;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 2rem;
+}
+
+.back-to-top {
+  color:#f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-to-top:hover {
+  color: rgb(2, 152, 160);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #f5f5f5;
 }
