@@ -40,4 +40,28 @@ h2 {
   font-weight: bold;
   color: rgb(255, 255, 255);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-name:hover {
+  color: rgb(205, 200, 200);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: rgb(90, 88, 88);
 }
