@@ -27,8 +27,8 @@ const testimonials = [
 function displayProjects() {
   const projectsContainer = document.getElementById("projects-container");
   projects.forEach(project => {
-    const projectElement = document.createElement("article");
-    projectElement.className = "project";
+    const card = document.createElement("article");
+    card.className = "card";
     const title = document.createElement("h3");
     title.textContent = project.title;
     const description = document.createElement("p");
@@ -40,31 +40,31 @@ function displayProjects() {
       tagElement.textContent = tag;
       tags.appendChild(tagElement);
     });
-    projectElement.appendChild(title);
-    projectElement.appendChild(description);
-    projectElement.appendChild(tags);
-    projectsContainer.appendChild(projectElement);
+    card.appendChild(title);
+    card.appendChild(description);
+    card.appendChild(tags);
+    projectsContainer.appendChild(card);
 
     const link = document.createElement("a");
     link.href = project.link;
     link.textContent = "View Project";
     link.target = "_blank";
-    projectElement.appendChild(link);
+    card.appendChild(link);
   });
 }
 
 function displayTestimonials() {
     const testimonialsContainer = document.getElementById("testimonials-container");
     testimonials.forEach(testimonial => {
-        const testimonialElement = document.createElement("article");
-        testimonialElement.className = "testimonial";
+        const card = document.createElement("article");
+        card.className = "card";
         const name = document.createElement("h4");
         name.textContent = testimonial.name;
         const feedback = document.createElement("p");
         feedback.textContent = testimonial.feedback;
-        testimonialElement.appendChild(name);
-        testimonialElement.appendChild(feedback);
-        testimonialsContainer.appendChild(testimonialElement);
+        card.appendChild(name);
+        card.appendChild(feedback);
+        testimonialsContainer.appendChild(card);
     });
 }
 
