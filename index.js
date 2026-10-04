@@ -52,3 +52,18 @@ function displayProjects() {
     projectElement.appendChild(link);
   });
 }
+
+function displayTestimonials() {
+    const testimonialsContainer = document.getElementById("testimonials-container");
+    testimonials.forEach(testimonial => {
+        const testimonialElement = document.createElement("article");
+        testimonialElement.className = "testimonial";
+        const name = document.createElement("h4");
+        name.textContent = testimonial.name;
+        const feedback = document.createElement("p");
+        feedback.textContent = testimonial.feedback;
+        testimonialElement.appendChild(name);
+        testimonialElement.appendChild(feedback);
+        testimonialsContainer.appendChild(testimonialElement);
+    });
+}
