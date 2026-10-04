@@ -67,3 +67,6 @@ function displayTestimonials() {
         testimonialsContainer.appendChild(testimonialElement);
     });
 }
+
+displayProjects();
+displayTestimonials();
