@@ -198,10 +198,10 @@ h2 {
 }
 
 .card {
-  background-color: #f5f5f5;
+  background-color: #00535340;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(116, 115, 115, 0.1);
 }
 
 .testimonials-header {
@@ -210,4 +210,28 @@ h2 {
 
 .projects-header {
   text-align: center;
+}
+
+.testimonials-section {
+  background-color: #f7f7f7;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+.projects-section {
+  background-color: #f0f0f0;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
 }
