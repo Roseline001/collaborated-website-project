@@ -24,3 +24,31 @@ const testimonials = [
   }
 ];
 
+function displayProjects() {
+  const projectsContainer = document.getElementById("projects-container");
+  projects.forEach(project => {
+    const projectElement = document.createElement("article");
+    projectElement.className = "project";
+    const title = document.createElement("h3");
+    title.textContent = project.title;
+    const description = document.createElement("p");
+    description.textContent = project.description;
+    const tags = document.createElement("ul");
+    tags.className = "tags";
+    project.tags.forEach(tag => {
+      const tagElement = document.createElement("li");
+      tagElement.textContent = tag;
+      tags.appendChild(tagElement);
+    });
+    projectElement.appendChild(title);
+    projectElement.appendChild(description);
+    projectElement.appendChild(tags);
+    projectsContainer.appendChild(projectElement);
+
+    const link = document.createElement("a");
+    link.href = project.link;
+    link.textContent = "View Project";
+    link.target = "_blank";
+    projectElement.appendChild(link);
+  });
+}
